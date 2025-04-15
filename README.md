@@ -2,7 +2,7 @@
 
 これは、[QWEL.DESIGN](https://qwel.design/) の作品集 Creative Crafts の作品テンプレートです。
 
-[https://creative.qwel.design/](https://creative.qwel.design/)
+[https://qwel.design/creative/](https://qwel.design/creative/)
 
 ---
 
