@@ -53,14 +53,15 @@
         canvas.style('background', '#000000');
         frameRate(30);
         colorMode(HSB, 100);
-        background(100);
+        background(0);
         for (let i = 0; i < num; i++) {
           ripples[i] = new Ripple(0, 0, 0, 0, 0, false);
         }
       }
   
       function draw() {
-        background(0);
+        fill(0);
+        rect(0, 0, width, height);
         for (let i = 0; i < num; i++) {
           if (ripples[i].getFlag()) {
             ripples[i].move();
@@ -75,6 +76,17 @@
           ripples[i] = new Ripple(r.x, r.y, r.diameter, r.speed, r.hue, true);
         }
         ripples[0] = new Ripple(mouseX, mouseY, 0, random(5, 15), int(random(10, 80)), true);
+      }
+  
+      function touchEnd() {
+        for (let i = num - 1; i > 0; i--) {
+          let r = ripples[i - 1];
+          ripples[i] = new Ripple(r.x, r.y, r.diameter, r.speed, r.hue, true);
+        }
+        for (let touch of touches) {
+          ripples[0] = new Ripple(touch.x, touch.y, 0, random(5, 15), int(random(10, 80)), true);
+        }
+        return false;
       }
   
       class Ripple {
