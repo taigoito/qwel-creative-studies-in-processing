@@ -1,8 +1,17 @@
-# QWEL CRAFT TEMPLATE | Created by ― QWEL.DESIGN
+# Studies | Created by ― QWEL.DESIGN
 
-これは、[QWEL.DESIGN](https://qwel.design/) の作品集 Creative Crafts の作品テンプレートです。
+- P5.JS で作成した、インタラクティブな表現作品の習作
+- [https://qwel.design/creative/studies-in-processing/](https://qwel.design/creative/studies-in-processing/)
 
-[https://qwel.design/creative/](https://qwel.design/creative/)
+---
+
+## 主な内容
+
+- Particles
+- Jelly Blobs
+- Emitter
+- Fibonacci Flower
+- Ripple
 
 ---
 
